@@ -1,24 +1,12 @@
-# vue-cli
 
-## Project setup
-```
-yarn install
-```
+# vue Study
+### vue-cli
 
-### Compiles and hot-reloads for development
+## 목표
 ```
-yarn serve
+vue 공부 시작
 ```
 
-### Compiles and minifies for production
-```
-yarn build
-```
+[//]: # (### Customize configuration)
 
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+[//]: # (See [Configuration Reference]&#40;https://cli.vuejs.org/config/&#41;.)
