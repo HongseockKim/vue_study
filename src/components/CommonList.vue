@@ -2,8 +2,12 @@
   <div id="list">
     <p>리스트 컴포넌트 입니다.</p>
     <p>카운트 : <span class="count_num">{{count}}</span></p>
+    <p>{{checkCount()}}</p>
     <button class="btn" @click="clicksUpNumber()">증가</button>
     <button class="btn" @click="clicksDownNumber()">감소</button>
+    <div>
+      <button class="reset" @click="reset()">초기화</button>
+    </div>
     <div v-show="isClickSet" class="text_content">
       <button type="button" class="close_btn" @click="closeClick()">X</button>
       <p>{{getData}}</p>
@@ -36,8 +40,16 @@ export default {
     clicksUpNumber: function() {
       this.count++;
     },
+    reset: function (  ) {
+      this.count = 1
+      return this.count;
+    },
     clicksDownNumber: function() {
       this.count--;
+    },
+    checkCount: function (  ){
+      var returnText = this.count < 10 ? "카운트값이 10 보다 작습니다." : "카운트 값이 10보다 큽니다";
+      return returnText;
     },
     closeClick: function (  ){
       this.isClickSet = false;
